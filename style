@@ -1,0 +1,569 @@
+/****************** LookThink ********************
+************    TABLE OF CONTENTS    *************
+**************************************************
+
+  							$Overall
+								$buttons
+								$assignments
+								$GradebookLandingPage
+*************************************************/
+
+
+
+/**************************************************
+								$overall
+*************************************************/
+#schoolforce-wrapper{
+	font-family: 'Varela', sans-serif !important;
+	width:990px;
+} 
+
+#schoolforce-wrapper h1,
+#schoolforce-wrapper h2, 
+#schoolforce-wrapper h3,
+#schoolforce-wrapper h4,
+#schoolforce-wrapper p,
+#schoolforce-wrapper p label {
+	display:block;
+}
+
+#schoolforce-wrapper a {
+	font-size:12px;
+	color:#0066CC;
+	margin-left:18px;
+}
+
+#schoolforce-wrapper a:hover {
+	color:#666666;
+	text-decoration:underline;
+}
+
+#schoolforce-wrapper h1 {
+	font-size:18px;
+	color:#1797BF;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin-bottom:15px;
+	margin-left:18px;
+}
+
+#schoolforce-wrapper h2 {
+	font-size:18px;
+	font-weight:bold;
+	color:#000;
+	margin-bottom:5px;
+	margin-left:18px;
+}
+
+
+#schoolforce-wrapper h3 {
+	font-size:14px;
+	font-weight:bold;
+	color:#000;
+	margin:18px 0 18px 18px;
+}
+
+#schoolforce-wrapper h4 {
+	font-size:12px;
+	font-weight:bold;
+	color:#000;
+	text-transform:uppercase;
+}
+
+#schoolforce-wrapper label {
+	color:#666;
+	font-size:12px;
+	font-weight:bold;
+}
+
+#schoolforce-wrapper p {
+	margin-top:24px;
+	color:#666666;
+	font-size:12px;
+	font-size:normal;
+}
+
+#schoolforce-wrapper .content {
+	padding:15px 15px 25px 15px;
+	border-top:1px solid #ABABAB;
+	overflow:auto;
+}
+
+#schoolforce-wrapper .content-wrapper {
+	border-radius:9px;
+	border:1px solid #ccc;
+	margin-top:12px;
+	overflow:auto;
+	border-top:3px solid #666;
+}
+
+#schoolforce-wrapper .three-column {
+	float:left;
+	width:33%;
+}
+
+#schoolforce-wrapper input[type="text"],
+
+#schoolforce-wrapper select {
+	width:200px;
+	padding:5px;
+}
+
+#schoolforce-wrapper textarea {
+	width:200px;
+	height:75px;
+	resize:none;
+	padding:5px
+}
+
+#schoolforce-wrapper table {
+	border:1px solid #ccc;
+	border-radius:9px;
+	font-size:12px;
+	color:#666666;
+	width:90%
+}
+
+#schoolforce-wrapper table tr {
+	border:1px solid #ccc;
+	text-align:left;
+	height:40px;
+}
+
+#schoolforce-wrapper table td {
+	border:1px solid #ccc;
+	padding-left:15px;
+}
+
+#schoolforce-wrapper table thead {
+	background-color:#eeeeee;
+	height:40px;
+	
+}
+
+#schoolforce-wrapper table a {
+	font-size:14px;
+	color:#0066CC;
+	margin-left:0px;
+}
+
+#schoolforce-wrapper table th {
+	font-size:10px;
+	text-transform:uppercase;
+	color:#000000;
+	padding-left:15px;
+}
+
+#schoolforce-wrapper table tr.alt {
+	background-color:#EEF7F9;
+}
+
+.clear_fix { 
+	clear:both;
+}
+
+body .bPageBlock, 
+body #bodyCell .bResource .secondaryPalette, 
+body .secondaryPalette.bPageBlock, 
+body .overlayDialog .secondaryPalette.bPageBlock, 
+body .individualPalette .secondaryPalette.bPageBlock, 
+body .bodyDiv .genericTable, 
+body .genericPageBlockTable, 
+body .bodyDiv .bSubBlock, 
+body .bComponentBlock .bPageBlock, 
+body .bMyDashboard .bPageBlock, 
+body.rlHoverFrame .bPageBlock,
+body.subjectSelectionPopup div.choicesBox, 
+body.lookupTab .secondaryPalette.bPageBlock, 
+body.popupTab .secondaryPalette.bPageBlock, 
+body.UserTagStatsPage .secondaryPalette.bPageBlock {
+	    border:none !important; 
+}
+	
+
+
+/**************************************************
+								$buttons
+*************************************************/
+
+
+ input.red_btn { 
+	border-radius:5px !important; 
+	color:#fff !important; 
+	font-weight:normal !important;
+	text-transform:uppercase !important; 
+	padding:10px !important; 
+	border:none; 
+	margin-right:10px !important;
+	background: #cc2800 !important; /* Old browsers */
+	background: -moz-linear-gradient(top,  #cc2800 16%, #7f0e00 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(16%,#cc2800), color-stop(100%,#7f0e00)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #cc2800 16%,#7f0e00 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #cc2800 16%,#7f0e00 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #cc2800 16%,#7f0e00 100%) !important; /* IE10+ */
+	background: linear-gradient(top,  #cc2800 16%,#7f0e00 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc2800', endColorstr='#7f0e00',GradientType=0 ) !important; /* IE6-9 */
+}
+
+input.red_btn:hover { 
+	background:#7F0E00 !important; 
+	}
+  
+input.blue_btn { 
+	background:#B5E3F2 !important;  
+	border-radius:5px !important; 
+	font-family: 'Varela', sans-serif !important; 
+	color:#000 !important; 
+	font-weight:normal !important;
+	text-transform:uppercase !important; 
+	padding:5px 40px 5px 20px !important; border:none !important; margin-right:10px !important; 
+	}
+	
+input.blue_btn:hover { 
+	background:#B5E3F2 !important;
+	background-position:right 4px !important; 
+	}
+  
+input.black_btn {
+	cursor:pointer; 
+	margin-left:5px; 
+	font-weight:normal; 
+	padding:10px 10px !important; 
+	border-radius:5px !important; 
+	border:none !important;  
+	text-transform:uppercase !important;
+	color:#fff !important; 
+	background: #4c4c4c !important; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4c4c4c 0%, #474747 29%, #2c2c2c 52%, #000000 64%, #1c1c1c 93%, #131313 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c4c4c), color-stop(29%,#474747), color-stop(52%,#2c2c2c), color-stop(64%,#000000), color-stop(93%,#1c1c1c), color-stop(100%,#131313)) !importnat; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4c4c4c 0%,#474747 29%,#2c2c2c 52%,#000000 64%,#1c1c1c 93%,#131313 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4c4c4c 0%,#474747 29%,#2c2c2c 52%,#000000 64%,#1c1c1c 93%,#131313 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4c4c4c 0%,#474747 29%,#2c2c2c 52%,#000000 64%,#1c1c1c 93%,#131313 100%) !important; /* IE10+ */
+	background: linear-gradient(top,  #4c4c4c 0%,#474747 29%,#2c2c2c 52%,#000000 64%,#1c1c1c 93%,#131313 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ) !important; /* IE6-9 */
+}
+
+
+
+input.black_btn:hover { 
+	background:#000 !important; 
+	}
+
+input.grey_btn {
+	cursor:pointer; 
+	margin-left:5px; 
+	font-weight:normal; 
+	padding:10px 10px !important; 
+	border-radius:5px !important; 
+	border:none !important;  
+	text-transform:uppercase !important;
+	color:#fff !important; 
+	background: #666666; /* Old browsers */
+	background: -moz-linear-gradient(top,  #999999 0%, #666666 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#999999), color-stop(100%,#666666)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #999999 0%,#666666 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #999999 0%,#666666 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #999999 0%,#666666 100%); /* IE10+ */
+	background: linear-gradient(top,  #999999 0%,#666666 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#666666',GradientType=0 ); /* IE6-8 */
+	}
+
+input.grey_btn:hover { 
+	background:#666 !important; 
+	}
+	
+	
+input.green_btn {
+	cursor:pointer; 
+	margin-left:5px; 
+	font-weight:normal; 
+	padding:10px 10px !important; 
+	border-radius:5px !important; 
+	border:none !important;  
+	text-transform:uppercase !important;
+	color:#fff !important; 
+	background: #1f9815; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1f9815 0%, #177610 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1f9815), color-stop(100%,#177610)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1f9815 0%,#177610 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1f9815 0%,#177610 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1f9815 0%,#177610 100%); /* IE10+ */
+	background: linear-gradient(top,  #1f9815 0%,#177610 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f9815', endColorstr='#177610',GradientType=0 ); /* IE6-8 */
+	}
+
+input.green_btn:hover { 
+	background:#177610 !important; 
+	}
+	
+input.drk_blue_btn {
+	cursor:pointer; 
+	margin-left:5px; 
+	font-weight:normal; 
+	padding:10px 10px !important; 
+	border-radius:5px !important; 
+	border:none !important;  
+	text-transform:uppercase !important;
+	color:#fff !important; 
+	background: #59afcc !important; /* Old browsers */
+	background: -moz-linear-gradient(top,  #59afcc 21%, #0180ab 85%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(21%,#59afcc), color-stop(85%,#0180ab)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #59afcc 21%,#0180ab 85%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #59afcc 21%,#0180ab 85%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #59afcc 21%,#0180ab 85%) !important; /* IE10+ */
+	background: linear-gradient(top,  #59afcc 21%,#0180ab 85%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59afcc', endColorstr='#0180ab',GradientType=0 ) !important; /* IE6-9 */
+}
+
+input.drk_blue_btn:hover { 
+	background:#0180AB !important; 
+	}
+	
+	input.grey_btn_arrow {
+	cursor:pointer; 
+	margin-left:5px; 
+	font-weight:normal; 
+	padding:10px 10px 10px 30px !important; 
+	border-radius:5px !important; 
+	border:none !important;  
+	text-transform:uppercase !important;
+	color:#fff !important; 
+	background: #666666; /* Old browsers */
+	background: url(../images/arrow-b.png) top left no-repeat, -moz-linear-gradient(top,  #999999 0%, #666666 100%); /* FF3.6+ */
+	background: url(../images/arrow-b.png) top left no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#999999), color-stop(100%,#666666)); /* Chrome,Safari4+ */
+	background: url(../images/arrow-b.png) top left no-repeat, -webkit-linear-gradient(top,  #999999 0%,#666666 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #999999 0%,#666666 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #999999 0%,#666666 100%); /* IE10+ */
+	background: linear-gradient(top,  #999999 0%,#666666 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#666666',GradientType=0 ); /* IE6-8 */
+	}
+
+input.grey_btn_arrow:hover { 
+	background:#666 !important; 
+	}
+	
+	
+input.green_btn_arrow {
+	background-image:url(../images/arrow.png);
+	background-position:right center;
+	background-repeat:no-repeat;
+	cursor:pointer; 
+	margin-left:5px; 
+	font-weight:normal; 
+	padding:10px 30px 10px 10px !important; 
+	border-radius:5px !important; 
+	border:none !important;  
+	text-transform:uppercase !important;
+	color:#fff !important; 
+	background: #1f9815; /* Old browsers */
+	background: url(../images/arrow.png) top right no-repeat, -moz-linear-gradient(top,  #1f9815 0%, #177610 100%); /* FF3.6+ */
+	background: url(../images/arrow.png) top right no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1f9815), color-stop(100%,#177610)); /* Chrome,Safari4+ */
+	background: url(../images/arrow.png) top right no-repeat, -webkit-linear-gradient(top,  #1f9815 0%,#177610 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1f9815 0%,#177610 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1f9815 0%,#177610 100%); /* IE10+ */
+	background: linear-gradient(top,  #1f9815 0%,#177610 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f9815', endColorstr='#177610',GradientType=0 ); /* IE6-8 */
+	}
+
+input.green_btn_arrow:hover { 
+	background:#177610 url(../images/arrow.png) top right no-repeat !important; 
+	}
+	
+#schoolforce-wrapper .alert {
+	background-image:url(../images/btn-info.png);
+	height:12px;
+	width:12px;
+	display:inline-block;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+}
+
+#schoolforce-wrapper .alert:hover {
+	background-position: 0 -12px;
+}
+
+
+/**************************************************
+								$assignments
+*************************************************/
+.bPageBlock { 
+	background:#fff !important; 
+	border:none;  
+	}
+	
+.bEditBlock .pbHeader > table, 
+.apexp .bPageBlock.apexDefaultPageBlock .pbHeader > table,
+#ep.bLayoutBlock .pbHeader > table { 
+	border-bottom:none; 
+	}
+   
+table.list { 
+	margin-top:45px;
+	border-top-left-radius:7px; 
+	border-top-right-radius:7px; 
+	width:750px; 
+	}
+
+table.list th.headerRow { 
+	background:#B5E3F2 !important;
+	color:#000 !important;
+	font-weight:normal;
+	}
+	
+table.list td { 
+	color:#666 !important;
+	padding:11px; 
+	}
+	
+body .pbBody table.list tr th,
+body .pbBody table.list tr td { 
+	border:1px solid #999;
+	}
+	
+label { 
+	margin:0 15px 5px 0; 
+	}
+	
+.detailList table.list { 
+	margin:0 0 45px 0; 
+	}
+	
+.Custom92Tab .tertiaryPalette, 
+.individualPalette .Custom92Block .tertiaryPalette, 
+.layoutEdit .individualPalette .Custom92Block .tertiaryPalette { 
+	background:none;  
+	}
+
+.dataTables_wrapper {
+	margin-bottom:15px; 
+	}
+	
+.dataTables_filter { 
+	border:0px solid #67b2ce !important; 
+	}
+
+.ui-widget-header { 
+	border:1px solid #67b2ce !important;
+	}
+	
+.detailList tr th  {
+	border-color:#67b2ce !important;
+	}
+	
+.apexp .bPageBlock .detailList { 
+	margin-bottom:0 !important;
+	}
+	
+.pbBody { 
+	padding-top:25px !important; 
+	}
+	 
+.dataTables_paginate.fg-buttonset.ui-buttonset.fg-buttonset-multi.ui-buttonset-multi.paging_two_button { 
+	width:50px; float:right;
+	}
+	
+.dataTables_info {
+	width:500px;
+	margin-left:5px;
+	float:left;
+	}
+	
+.ui-toolbar { 
+	padding:5px; 
+	background:#B5E3F2; 
+	color:#333; 
+	}
+	  
+.ui-widget-header { 
+	background:#B5E3F2 !important; 
+	padding:5px; 
+	}
+	
+.ui-widget-header .dataTables_length { 
+	width:250px; 
+	float:right; 
+	text-align:right;
+	}
+	
+.ui-widget-header .dataTables_filter { 
+	float:left; 
+	width:250px; 
+	}
+	  
+.tablesorter th { 
+	padding:3px;
+	background:#B5E3F2; 
+	border:1px solid #67b2ce; 
+	}
+	  
+.tablesorter tbody tr td { 
+	padding:5px 3px; 
+	color:#333; 
+	}
+
+/**************************************************
+								$GradebookLandingPage
+*************************************************/
+th.headCol { 
+	color:#666; 
+	font-weight:normal; 
+	padding:0 10px; 
+	border-right:3px solid #fff; 
+	}
+	
+th.headCol a { 
+	color:#333; 
+	font-weight:bold; 
+	}
+	
+a { 
+	text-decoration:none; 
+	}
+	
+td.headCol input { 
+	border:1px solid #999;
+	text-align:center; color:#666;
+	}
+	
+tr.odd { 
+	background:#FAFAFA;
+	}
+	
+#group .mainTable td {
+	border:none; 
+	}
+.leftTable th { 
+	background:#099BCC; 
+	color:#fff; 
+	padding-left:10px; 
+	border-right:3px solid #fff; 
+	}
+	
+#group .leftTable td { 
+	border-right:3px solid #fff; 
+	}
+	
+#group .leftTable td.studCol { 
+	border-right:none; 
+	padding-left:10px; 
+	font-size:12px; 
+	color:#333; 
+	font-weight:bold; 
+	}
+	
+#group .leftTable td.grade { 
+	text-align:center; 
+	font-weight:bold; 
+	}
+	
+#group .leftTable td.failing { 
+	color:#A10505; 
+	background:none; 
+	}
+	
+#group .leftTable td.passing { 
+	color:#999A35; 
+	background:none;
+	}
+
+
